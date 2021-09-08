@@ -32,7 +32,7 @@ function Banner() {
             <MainLeft>
                 <h1>More than Just Shorter Links</h1>
                 <p>
-                    Build your brand's recognition and get detailed insight on how your links are performing
+                    Build your brands recognition and get detailed insight on how your links are performing
                 </p>
                 <Link href="/" passHref>
                     <a>Get Started</a>
