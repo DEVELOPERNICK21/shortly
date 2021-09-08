@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from 'next/link'
 
-const SubscribeArea = styled.div `
+const LinkH = styled.div `
 height: 25vh;
 background : #3b3054;
 color : #fff;
@@ -13,13 +13,16 @@ align-items: center;
 align-content: center;
 `
 
-function Subscribe() {
+
+function LinkData() {
+
+
+
     return (
-        <SubscribeArea>
-            <h1>Boost your links today</h1>
-            <button type="submit">Shorten it!</button>
-        </SubscribeArea>
+        <LinkH>
+            <h1>Here History Comes</h1>
+        </LinkH>
     )
 }
 
-export default Subscribe;
+export default LinkData;

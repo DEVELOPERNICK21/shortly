@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,  } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import CopyToClipboard from "react-copy-to-clipboard";
 import shrtcode from '../pages/api/shrtcode.js'
+import LinkData from "./LinkHistory.js";
 
 
 const HTTP_URL_VALIDATOR_REGEX = /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g;
@@ -103,54 +104,64 @@ function ShortLink() {
     const [short, setShort] = useState('');
     const [orignal, setOrignal] = useState('');
     const [validLink, setValidLink] = useState('');
+    const [items, setItems] = useState([]);
 
+
+   
     const validatingURL = (item) => {
         return item.match(HTTP_URL_VALIDATOR_REGEX)
     }
 
     const handelSubmit = (event) => {
         event.preventDefault();
-        if(validatingURL(string))
-        {
+        if (validatingURL(string)) {
             getLink();
             setString('');
-        }else{
+        } else {
             setValidLink("Please Enter A Valid Link")
         }
+      
     }
 
     const getLink = async () => {
         await shrtcode
-        .get(`shorten?url=${string}`)
-        .then((response) => {
-            setShort(response.data.result.short_link);
-            setOrignal(response.data.result.original_link);
-        })
-        .catch((error) => {
-            console.error(error);
-        });
+            .get(`shorten?url=${string}`)
+            .then((response) => {
+                setShort(response.data.result.short_link);
+                setOrignal(response.data.result.original_link);   
+                setItems([ ...items, {
+                    id: items.length,
+                    value : response.data.result.short_link,
+                    OriLink :response.data.result.original_link,
+                }]) 
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     }
+
 
     return (
         <MainSecondry>
             <LinkInput>
                 <SvgArea>
                     <form onSubmit={(event) => handelSubmit(event)}>
-                        <PutLink value={string} onChange={(event) => { 
+                        <PutLink value={string} onChange={(event) => {
                             setString(event.target.value);
-                        }} type="text" autocomplete="name" required placeholder="Shorten a link here" />
+                        }} type="text"  required placeholder="Shorten a link here" />
                         <ShortButton onClick={(event) => handelSubmit(event)} type="submit">Shorten it!</ShortButton>
                     </form>
                     <h1>{validLink}</h1>
                 </SvgArea>
             </LinkInput>
             <LinkHistory>
-                    <h2>{orignal} Here</h2>
-                    <h2>{short}</h2>
-                <CopyToClipboard text={short}>
-                        <button >{short} {console.log(short)} <span>Copy</span></button>
-                </CopyToClipboard>
 
+                <h2>no {orignal} Here</h2>
+                <CopyToClipboard text={short}>
+                        <ul>
+                            {items.map( itemd => (<li key={itemd.id}>  {itemd.OriLink} {itemd.value} <button >Copy</button></li> ) )}
+                        </ul>
+                </CopyToClipboard>
                 Link History.....
             </LinkHistory>
             <HeadLine>
