@@ -47,6 +47,7 @@ font-size: 4vw;
 color: #333333;
 line-height: 1;
 font-weight: 700;
+font-family: 'Poppins', sans-serif;
 
 @media only screen and (max-width: 375px) {
     font-size:  1em;
