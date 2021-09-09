@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Navigation, Logo, NavContent, NavLeft, NavRight, StyledLink, Signup} from './Navbar.element'
 
-// const Navigation = sty
 function Navbar() {
   return (
     <Navigation>

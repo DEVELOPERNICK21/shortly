@@ -1,6 +1,6 @@
 import Banner from "./Banner/Banner";
 import Footer from "./Footer/Footer";
-import Navbar from "./ShortNav/Navbar";
+import Navbar from "./Navbar";
 import ShortLink from "./Shortlink/Shortlink";
 import Subscribe from "./Subscribe/Subscribe";
 
