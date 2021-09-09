@@ -431,7 +431,7 @@ function ShortLink() {
           </CardSvgone>
           <CardHeading>Brand Recognition</CardHeading>
           <CardPara>
-            Boost your brand regonition with each click. Generic links don't
+            Boost your brand regonition with each click. Generic links dont
             mean a thing. Brand links help instil confidence in your content.
           </CardPara>
         </CardOne>
