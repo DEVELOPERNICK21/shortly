@@ -1,8 +1,8 @@
-import Banner from "./Banner";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import ShortLink from "./Shortlink";
-import Subscribe from "./Subscribe";
+import Banner from "./Banner/Banner";
+import Footer from "./Footer/Footer";
+import Navbar from "./Navbar/Navbar";
+import ShortLink from "./Shortlink/Shortlink";
+import Subscribe from "./Subscribe/Subscribe";
 
 export default function Layout({children}) {
 return(

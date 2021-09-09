@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import Link from 'next/link'
-import Image from 'next/image'
-import mainImage from '../images/illustration-working.svg'
 
-const MainSection = styled.main`
+
+export const MainSection = styled.main`
 background : #ffffff;
 /* background : skyblue; */
 height: 100vh;
@@ -15,9 +13,15 @@ justify-content: space-evenly;
 align-items: center;
 align-content: center;
 flex-wrap: wrap;
+
+@media only screen and (max-width: 375px) {
+background-color:red;  
+display: flex;
+}
+
 `
 
-const MainLeft = styled.div`
+export const MainLeft = styled.div`
 width: 50%;
 /* align-self: center; */
 display: flex;
@@ -26,21 +30,44 @@ justify-content: center;
 align-items: flex-start;
 align-content: center;
 flex-wrap: wrap;
+
+@media only screen and (max-width: 375px) {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 50vh;
+  }
+
+
 `
 
-const BanerHeading = styled.h1`
+export const BanerHeading = styled.h1`
 font-size: 4vw;
 /* width: 70%; */
 color: #333333;
 line-height: 1;
 font-weight: 700;
+
+@media only screen and (max-width: 375px) {
+    font-size:  1em;
+    background-color: yellow;
+    width: 100%;
+  }
+
 `
-const SubHeading = styled.p`
+export const SubHeading = styled.p`
 color: #9d9aa7;
 margin: -1em 0 0 0;
 font-size: 1.3vw;
+@media only screen and (max-width: 375px) {
+    font-size:  1em;
+    background-color: purple;
+    width: 100%;
+  }
+
 `
-const GetStart = styled.span`
+export const GetStart = styled.button`
+border: none;
 background-color: #2acfcf;
 color: #fff;
 margin: 1em 0 0 0;
@@ -49,9 +76,13 @@ padding: .5em .8em .5em .8em;
 font-size: 1.3vw;
 /* width: 100%; */
 border-radius: 5em;
+
+&:hover {
+    background-color: #3ebbbb;
+}
 `
 
-const MainRight = styled.div`
+export const MainRight = styled.div`
 /* background : red; */
 width: 50%;
 height: 100%;
@@ -64,25 +95,3 @@ align-content: center;
 flex-wrap: wrap;
 background-size: contain;
 `
-
-
-function Banner() {
-    return (
-        <MainSection>
-            <MainLeft>
-                <BanerHeading>More than Just Shorter Links</BanerHeading>
-                <SubHeading>
-                    Build your brands recognition and get detailed insight on how your links are performing
-                </SubHeading>
-                <Link href="/" passHref>
-                    <GetStart>Get Started</GetStart>
-                </Link>
-            </MainLeft>
-            <MainRight>
-                 <Image src={mainImage} height="500vh" width="750vh" alt="Illustration of Working Man" />
-            </MainRight>
-        </MainSection>
-    )
-}
-
-export default Banner;
