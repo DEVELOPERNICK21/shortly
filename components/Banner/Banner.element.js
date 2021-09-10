@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const MainSection = styled.main`
 background : #ffffff;
-/* background : skyblue; */
 height: 100vh;
 width: 100%;
 padding:  0vh 20vh 20vh 18vh;
@@ -15,12 +14,10 @@ align-content: center;
 /* flex-wrap: wrap; */
 
 @media only screen and (max-width: 768px) {
-  /* background-color: red; */
   flex-direction: column-reverse;
 }
 
 @media only screen and (max-width: 468px) {
-  /* background-color: skyblue; */
   width: 100vh;
   min-height: 150vh;
 }

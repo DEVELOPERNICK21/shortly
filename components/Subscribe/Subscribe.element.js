@@ -12,6 +12,15 @@ justify-content: center;
 align-items: center;
 align-content: center;
 flex-wrap: wrap;
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 468px) {
+    width: 100vh;
+    height: auto;
+    flex-direction: column;
+}
 `
 
 
@@ -44,6 +53,21 @@ border-radius: 5em;
 &:hover {
     background-color: #3ebbbb;
 }
+@media only screen and (max-width: 768px) {
+    margin: 1em 0 0 0;
+    padding: 1.5vh 3vh;
+    
+}
+
+@media only screen and (max-width: 468px) {
+    margin:2em 0 2em 0;
+    padding: 1em 4em 1em 4em;
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+
+
 `
 
 
@@ -51,4 +75,9 @@ export const BoosLine = styled.h1`
 color: #fff;
 font-size: 5vh;
 font-weight: 700;
+
+@media only screen and (max-width: 468px) {
+    font-size: 8vh;
+
+}
 `

@@ -14,12 +14,10 @@ export const Navigation = styled.nav`
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    /* background-color: skyblue; */
     height: 20vh;
     width: 100%;
   }
   @media only screen and (max-width: 468px) {
-    /* background-color: yellow; */
     height: 30vh;
     width: 100vh  ;
   }
@@ -27,7 +25,6 @@ export const Navigation = styled.nav`
 
 export const MenuIcon = styled.div`
   display: none;
-  color: red;
   background-image: url(${require("../images/icons8-menu.svg")});
   background-color: #3333;
   background-repeat: no-repeat;

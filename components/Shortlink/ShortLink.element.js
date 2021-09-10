@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainSecondry = styled.main`
-background: #f4f6f8;
+/* background: #f4f6f8; */
 color: #000;
 height: 100vh;
 width: 100%;
@@ -11,9 +11,19 @@ justify-content: space-evenly;
 align-items: center;
 align-content: center;
 flex-wrap: wrap;
+
+@media only screen and (max-width: 768px) {
+  height: 150vh;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 100vh;
+  height: 350vh;
+}
+
+
 `;
 export const LinkInput = styled.div`
-/* background-color: red;    */
 width: 100%;
 height: 20%;
 display: flex;
@@ -24,6 +34,10 @@ top: 50em;
 position: relative;
 top: -10vh;
 /* z-index: 20; */
+
+@media only screen and (max-width: 468px) {
+  height: 10%;
+}
 `;
 
 export const SvgArea = styled.div`
@@ -44,7 +58,6 @@ box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 `;
 
 export const FormArea = styled.form`
-/* background-color: pink; */
 height: 100%;
 width: 100%;
 display: flex;
@@ -53,10 +66,23 @@ box-sizing: border-box;
 justify-content: center;
 align-items: center;
 align-content: center;
-flex-wrap: wrap;
+
+@media only screen and (max-width: 768px) {
+  
+  
+}
+
+@media only screen and (max-width: 468px) {
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh 2vh;
+}
+
+
 `;
 export const PutLink = styled.input`
-/* background-color: pink; */
 box-sizing: border-box;
 width: 2vh;
 padding: 12px 20px;
@@ -73,6 +99,20 @@ align-items: center;
 align-content: center;
 flex-wrap: wrap;
 position: inherit;
+
+
+@media only screen and (max-width: 768px) {
+  
+  
+}
+
+@media only screen and (max-width: 468px) {
+  /* width: 4vh; */
+  padding: 2.5vh 35vh;
+  margin: 0vh 0vh;
+}
+
+
 `;
 
 export const ShortButton = styled.button`
@@ -94,17 +134,36 @@ flex-wrap: wrap;
 
 &:hover {
   background-color: #3ebbbb;
+  
 }
+
+
+@media only screen and (max-width: 468px) {
+  /* width: .2vh; */
+  padding: 1.5vh 35vh;
+  margin: 1vh 1vh;
+}
+
 
 `;
 
 export const Validmsg = styled.h5`
 color: red;
+
+
+@media only screen and (max-width: 768px) {
+  position: absolute;
+  top: 90px;
+}
+
+@media only screen and (max-width: 468px) {
+  position: absolute;
+  top: 110px;
+}
 `
 
 
 export const LinkHistory = styled.div`
-/* background-color: yellow; */
 width: 100%;
 height: 20%;
 display: flex;
@@ -113,10 +172,17 @@ justify-content: center;
 align-items: center;
 align-content: center;
 top: 50em;
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 468px) {
+  height: 8%;
+}
+
 `;
 
 export const ShowLinkHis = styled.div`
-/* background-color: red; */
 height: 6vh;
 width: 80%;
 height: auto;
@@ -129,7 +195,6 @@ flex-wrap: wrap;
 `;
 
 export const Ulist = styled.ul`
-/* background-color: purple; */
 width: 100%;
 height: auto;
 display: flex;
@@ -154,7 +219,6 @@ box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
 `;
 
 export const OrignalLink = styled.span`
-/* background-color: yellow; */
 width: 100%;
 display: flex;
 flex-direction: row;
@@ -165,7 +229,6 @@ flex-wrap: wrap;
 `;
 
 export const ShortLinks = styled.span`
-/* background-color: pink; */
 width: 100%;
 color: #2acfcf;
 display: flex;
@@ -192,7 +255,6 @@ border-radius: 0.5vh;
 `;
 
 export const HeadLine = styled.div`
-/* background-color: skyblue; */
 width: 50%;
 height: 20%;
 display: flex;
@@ -206,21 +268,48 @@ font-size: 1.2vw;
 color: #333333;
 line-height: 1;
 font-weight: 700;
+
+@media only screen and (max-width: 768px) {
+  height: 20%;
+  width: 100%;
+  font-size: 3vw;
+  line-height: 4vh;
+}
+
+@media only screen and (max-width: 468px) {
+  height: 10%;
+  width: 100%;
+  font-size: 5vw;
+}
+
 `;
 
 export const SubIntro = styled.div`
-/* background-color: red; */
 justify-content: center;
 color: #333333;
 text-align: center;
 color: #9d9aa7;
 margin: -.8vh 0 0 0;
 font-size: 1.3vw;
+
+
+@media only screen and (max-width: 768px) {
+  margin:  0;
+  height: 20%;
+  width: 80%;
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 468px) {
+  height: 10%;
+  width: 90%;
+  font-size: 6vw;
+}
+
 `;
 
 export const Cards = styled.div`
-/* background-color: pink; */
-width: 90%;
+width: 95%;
 height: 40%;
 display: flex;
 flex-direction: row;
@@ -228,6 +317,17 @@ justify-content: space-around;
 align-items: center;
 align-content: center;
 top: 50em;
+
+@media only screen and (max-width: 468px) {
+  height: 72%;
+  flex-direction: column;
+  text-align: center;
+align-items: center;
+align-content: center;
+
+}
+
+
 `;
 
 export const Line = styled.div`
@@ -236,21 +336,41 @@ height: 1vh;
 width: 65%;
 z-index: 0;
 position: absolute;
+
+@media only screen and (max-width: 468px) {
+  height: 5vh;
+width: 120vh;
+  transform: rotate(90deg);
+}
 `;
 
 export const CardOne = styled.div`
+
 z-index: 1;
 background-color: #fff;
 height: 70%;
 width: 30%;
 padding : 4vh;
 display: flex;
+font-size: 2.5vh;
 flex-direction: column;
 justify-content:space-evenly;
 align-content: center;
 align-items: flex-start;
+box-sizing: border-box;
 border-radius: 1vh;
 box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+
+@media only screen and (max-width: 768px) {
+  font-size: 1.8vh;
+  height: 60%;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 100%; 
+  height: 25%;
+  border-radius: 3vh;
+}
 
 `;
 
@@ -261,6 +381,7 @@ height: 70%;
 margin: 4vh 0 0 0;
 width: 30%;
 padding : 4vh;
+font-size: 2.5vh;
 display: flex;
 flex-direction: column;
 justify-content:space-evenly;
@@ -268,6 +389,17 @@ align-content: center;
 align-items: flex-start;
 border-radius: 1vh;
 box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+
+@media only screen and (max-width: 768px) {
+  font-size: 1.8vh;
+  height: 60%;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 100%; 
+  height: 26%;
+  margin: 12vh 0 0 0;
+}
 
 `;
 
@@ -277,6 +409,7 @@ background-color: #fff;
 height: 70%;
 margin: 8vh 0 0 0;
 width: 30%;
+font-size: 2.5vh;
 padding : 4vh;
 display: flex;
 flex-direction: column;
@@ -286,6 +419,17 @@ align-items: flex-start;
 border-radius: 1vh;
 box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 
+
+@media only screen and (max-width: 768px) {
+  font-size: 1.8vh;
+  height: 60%;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 100%; 
+  height: 26%;
+  margin: 12vh 0 0 0;
+}
 `;
 
 export const CardSvgone = styled.div`
@@ -300,6 +444,20 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 align-content: center;
+
+@media only screen and (max-width: 768px) {
+  margin: 0 0 35vh 0 ;
+  width: 7%;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 40%;
+  height: 26%;
+  margin: 0 0 70vh 34vh ;
+}
+@media only screen and (max-width: 468px) {
+  
+}
 `;
 
 export const CardSvgtwo = styled.div`
@@ -314,6 +472,16 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 align-content: center;
+@media only screen and (max-width: 768px) {
+  margin: 0 0 35vh 0 ;
+  width: 7%;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 40%;
+  height: 25%;
+  margin: 0 0 70vh 34vh ;
+}
 `;
 
 export const CardSvgthree = styled.div`
@@ -328,17 +496,60 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 align-content: center;
+@media only screen and (max-width: 768px) {
+  margin: 0 0 35vh 0 ;
+  width: 7%;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 40%;
+  height: 25%;
+  margin: 0 0 70vh 34vh ;
+}
+
 `;
+
+
+
 export const CardHeading = styled.div`
-/* background-color: yellow; */
 font-size: 3vh;
-font-weight: 700;
 padding: 4vh 0 0 0;
+
+@media only screen and (max-width: 900px) {
+  font-size: 2.5vh;
+
+}
+@media only screen and (max-width: 768px) {
+  font-size: 2vh;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 468px) {
+  font-size: 7vh;
+  width: 95%; 
+}
+
 `;
 export const CardPara = styled.div`
-/* background-color: purple; */
+font-size: 2vh;
 color: #9d9aa7;
-line-height: 1.3;
+font-size: 2vh;
 text-align: start;
+
+@media only screen and (max-width: 900px) and (min-width: 751px)  {
+  font-size: 2vh;
+  line-height: 1.5;
+  
+}
+@media only screen and (max-width: 768px) {
+  font-size: 1.8vh;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 468px) {
+  font-size: 4vh;
+  text-align: center;
+  line-height: 2;
+}
 
 `;
