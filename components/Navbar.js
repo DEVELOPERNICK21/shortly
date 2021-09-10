@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Navigation, Logo, NavContent, NavLeft, NavRight, StyledLink, Signup} from './Navbar.element'
+import { Navigation, Logo, NavContent, NavLeft, NavRight, StyledLink, Signup, MenuIcon} from './Navbar.element'
 
 function Navbar() {
   return (
@@ -28,6 +28,7 @@ function Navbar() {
           </StyledLink>
         </NavRight>
       </NavContent>
+          <MenuIcon></MenuIcon>
     </Navigation>
   );
 }

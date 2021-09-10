@@ -16,7 +16,7 @@ function Banner() {
                 </Link>
             </MainLeft>
             <MainRight>
-                 <Image src={mainImage} height="500vh" width="750vh" alt="Illustration of Working Man" />
+                 <Image src={mainImage} height="500vh" width="750vh"  alt="Illustration of Working Man" />
             </MainRight>
         </MainSection>
     )

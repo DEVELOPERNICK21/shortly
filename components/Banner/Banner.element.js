@@ -12,13 +12,18 @@ flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
 align-content: center;
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
 
-@media only screen and (max-width: 375px) {
-background-color:red;  
-display: flex;
+@media only screen and (max-width: 768px) {
+  /* background-color: red; */
+  flex-direction: column-reverse;
 }
 
+@media only screen and (max-width: 468px) {
+  /* background-color: skyblue; */
+  width: 100vh;
+  min-height: 150vh;
+}
 `
 
 export const MainLeft = styled.div`
@@ -29,14 +34,18 @@ flex-direction:column;
 justify-content: center;
 align-items: flex-start;
 align-content: center;
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
 
-@media only screen and (max-width: 375px) {
-    width: 100%;
-    display: flex;
-    position: relative;
-    top: 50vh;
-  }
+@media only screen and (max-width: 768px) {
+  width: 100%;
+  align-items: center;
+  
+}
+
+@media only screen and (max-width: 468px) {
+  width: 100%;
+  align-items: center;
+}
 
 
 `
@@ -49,22 +58,36 @@ line-height: 1;
 font-weight: 700;
 font-family: 'Poppins', sans-serif;
 
-@media only screen and (max-width: 375px) {
-    font-size:  1em;
-    background-color: yellow;
-    width: 100%;
-  }
+@media only screen and (max-width: 768px) {
+  justify-content: center;
+  text-align: center;
+  font-size: 6vw;
+}
+
+@media only screen and (max-width: 468px) {
+  justify-content: center;
+  text-align: center;
+  font-size: 10vw;
+}
+
 
 `
 export const SubHeading = styled.p`
 color: #9d9aa7;
 margin: -1em 0 0 0;
 font-size: 1.3vw;
-@media only screen and (max-width: 375px) {
-    font-size:  1em;
-    background-color: purple;
-    width: 100%;
-  }
+
+@media only screen and (max-width: 768px) {
+  width: 100%;
+  text-align: center;
+  font-size: 3vh;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 100%;
+  text-align: center;
+  font-size: 4vh;
+}
 
 `
 export const GetStart = styled.button`
@@ -79,14 +102,31 @@ font-size: 1.3vw;
 border-radius: 5em;
 
 &:hover {
-    background-color: #3ebbbb;
+  background-color: #3ebbbb;
 }
+
+@media only screen and (max-width: 768px) {
+  /* width: 100%; */
+  font-size: 2vh;
+  padding: 1em 1.5em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 468px) {
+  width: 50%;
+  padding: 0 ;
+  font-size: 3vh;
+  padding: 1em 1.5em;
+  text-align: center;
+}
+
+
 `
 
 export const MainRight = styled.div`
 /* background : red; */
-width: 50%;
-height: 100%;
+width: auto;
+height: auto;
 padding-left:5em ;
 display: flex;
 flex-direction:column;
@@ -95,4 +135,17 @@ align-items: flex-start;
 align-content: center;
 flex-wrap: wrap;
 background-size: contain;
+
+@media only screen and (max-width: 768px) {
+  width: 100%;
+  font-size: 2vh;
+  /* padding: 10vh 0 0 0 ; */
+}
+
+@media only screen and (max-width: 468px) {
+  width: 100%;
+  padding: 0 ;
+}
+
+
 `
