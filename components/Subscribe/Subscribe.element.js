@@ -75,6 +75,8 @@ export const BoosLine = styled.h1`
 color: #fff;
 font-size: 5vh;
 font-weight: 700;
+cursor: pointer;
+
 
 @media only screen and (max-width: 468px) {
     font-size: 8vh;

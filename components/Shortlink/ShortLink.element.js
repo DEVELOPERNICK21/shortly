@@ -268,6 +268,8 @@ font-size: 1.2vw;
 color: #333333;
 line-height: 1;
 font-weight: 700;
+cursor: pointer;
+
 
 @media only screen and (max-width: 768px) {
   height: 20%;
@@ -291,6 +293,7 @@ text-align: center;
 color: #9d9aa7;
 margin: -.8vh 0 0 0;
 font-size: 1.3vw;
+cursor: pointer;
 
 
 @media only screen and (max-width: 768px) {
@@ -359,7 +362,7 @@ align-content: center;
 align-items: flex-start;
 box-sizing: border-box;
 border-radius: 1vh;
-box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 @media only screen and (max-width: 768px) {
   font-size: 1.8vh;
@@ -388,7 +391,7 @@ justify-content:space-evenly;
 align-content: center;
 align-items: flex-start;
 border-radius: 1vh;
-box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 @media only screen and (max-width: 768px) {
   font-size: 1.8vh;
@@ -417,7 +420,7 @@ justify-content:space-evenly;
 align-content: center;
 align-items: flex-start;
 border-radius: 1vh;
-box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
 
 @media only screen and (max-width: 768px) {
@@ -514,6 +517,8 @@ align-content: center;
 export const CardHeading = styled.div`
 font-size: 3vh;
 padding: 4vh 0 0 0;
+cursor: pointer;
+
 
 @media only screen and (max-width: 900px) {
   font-size: 2.5vh;
@@ -535,6 +540,8 @@ font-size: 2vh;
 color: #9d9aa7;
 font-size: 2vh;
 text-align: start;
+cursor: pointer;
+
 
 @media only screen and (max-width: 900px) and (min-width: 751px)  {
   font-size: 2vh;

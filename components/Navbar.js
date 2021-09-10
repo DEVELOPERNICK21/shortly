@@ -28,7 +28,8 @@ function Navbar() {
           </StyledLink>
         </NavRight>
       </NavContent>
-          <MenuIcon></MenuIcon>
+          <MenuIcon ></MenuIcon>
+
     </Navigation>
   );
 }

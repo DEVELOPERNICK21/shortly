@@ -31,6 +31,8 @@ flex-direction: row;
 justify-content: space-evenly;
 align-items: flex-start;
 align-content: center;
+cursor: pointer;
+
 @media only screen and (max-width: 768px) {
 }
 
@@ -73,6 +75,8 @@ flex-direction: column;
 padding: 2vh;
 align-content: center;
 align-items: center;
+cursor: pointer;
+
 
 @media only screen and (max-width: 768px) {
 }
@@ -108,6 +112,7 @@ flex-direction: column;
 justify-content: center; 
 align-content: center;
 align-items: center;
+cursor: pointer;
 
 &:hover {
 color: #8d8d8d;

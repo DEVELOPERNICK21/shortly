@@ -72,7 +72,7 @@ export const NavContent = styled.div`
   padding: 0px 0px 0.2px 0px;
   flex-direction: row;
   font-weight: 900 bold;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-content: center;
   align-items: baseline;
@@ -93,9 +93,13 @@ export const NavContent = styled.div`
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
+    transition: transform 0.3s ease-in-out;
   }
+
   @media only screen and (max-width: 468px) {
   }
+
+
   `;
 
 export const NavLeft = styled.div`
