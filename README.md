@@ -1,3 +1,10 @@
+You can this website by this link :- 🔥 https://shortly-rosy.vercel.app/
+  or this link :- 🔥 https://nifty-brown-625206.netlify.app/
+
+
+![image](https://user-images.githubusercontent.com/62968258/134990790-25e4cd6a-2dda-44cb-825a-f8ec5645d33b.png)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
