@@ -1,6 +1,5 @@
 You can this website by this link :- 🔥 https://shortly-rosy.vercel.app/
-  or this link :- 🔥 https://nifty-brown-625206.netlify.app/
-
+  or this link :- 🔥 https://urlshortly-nick.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/62968258/134990790-25e4cd6a-2dda-44cb-825a-f8ec5645d33b.png)
 
